@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Boston Weather Forecast
+  div Update time: #{updateTime}
+  table(style='width:100%', border='1')
+    tr
+      th Field
+      th Description
+    tr
+      td Start Time
+      td #{info.startTime}
+    tr
+      td End Time
+      td #{info.endTime}
+    tr
+      td Temperature
+      td #{info.temperature}
+    tr
+      td Weather
+      td #{info.shortForecast}
+    tr
+      td Weather Icon
+      td #{info.icon}
